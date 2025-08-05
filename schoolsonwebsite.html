@@ -1,0 +1,496 @@
+
+<!-- header -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <title>Abu Ubaida International College</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="https://www.abu-ubaida.scl.ng/images/favicon.png"> 
+    
+	<!-- CSS -->	
+    <link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+	<link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/css/animate.min.css" rel="stylesheet">
+	<link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/css/font-awesome.min.css" rel="stylesheet">
+	<link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="https://www.abu-ubaida.scl.ng/assets/js/jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="https://www.abu-ubaida.scl.ng/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet"/>
+</head>
+
+<body><!-- end header --> 
+ 
+<div class="container">
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <li class="dropdown">
+      <a href="#" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false" class="text-white">
+          <i class="fa fa-copy"> </i>&nbsp;APPLY FOR ADMISSION&nbsp;&nbsp;&nbsp;
+          <div class="pull-right"><i class="fa fa-angle-down"></i></div>
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+          <li><a href="https://www.abu-ubaida.scl.ng/admission/" class="dropdown-item">Apply Now</a></li>
+          <li><a href="https://www.abu-ubaida.scl.ng/admission/check_admission.php" class="dropdown-item">Check Admission Status</a></li>
+      </ul>
+    </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" id="txt" autocomplete="off" placeholder="Search Your School Here" aria-label="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="header-bg">
+  <div class="row-fluid">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6"><br>
+          <img src="https://www.abu-ubaida.scl.ng/images/head.jpg" class="img-fluid">
+        </div>
+
+        <div class="col-md-6">
+          <div class="pull-right">
+            <!--- login button -->
+            <div class="btn-group mt-md-4 me-1">
+              <button type="button" class="btn btn-success" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-sign-in-alt"></i>&nbsp;Login</button>
+              <button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"></button>
+              <ul class="dropdown-menu">        
+                <li>
+                  <a href="#admin" class="dropdown-item" role="button"  data-bs-toggle="modal" data-bs-target="#admin"><i class="fa fa-user"></i>&nbsp;Admin Login</a>
+                </li>
+                <li>
+                  <a href="#staff" class="dropdown-item" role="button"  data-bs-toggle="modal" data-bs-target="#staff"><i class="fa fa-user"></i>&nbsp;Staff Login</a>
+                </li>
+                <li>
+                  <a href="#parent" class="dropdown-item" role="button"  data-bs-toggle="modal" data-bs-target="#parent"><i class="fa fa-user"></i>&nbsp;Parent Login</a>
+                </li> 
+                <li>
+                  <a href="https://www.abu-ubaida.scl.ng/cbt/check_point.php" class="dropdown-item"><i class="fa fa-question-circle"></i>&nbsp;CBT Login</a>
+                </li>                               
+              </ul>
+            
+              <!-- modal -->
+<div class="modal fade" id="admin" tabindex="-1" aria-labelledby="adminLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="adminLabel">Admin Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+			<div style="background-color: #FFF; padding: 4px 6px;">
+
+				
+			
+							
+				<form role="signin" method="post" action="/home.php">
+					<div class="row">
+						<div class="col-sm-12">
+							<label for="username" class="fw-bold">Username: <span class="text-danger">*</span></label>
+							<input type="text" name="username" class="form-control" placeholder="Input Username">
+						</div>
+						
+						<div class="col-sm-12">
+							<label for="password" class="fw-bold">Password: <span class="text-danger">*</span></label>
+							<input type="password" name="password" class="form-control" placeholder="Input Password">
+						</div>
+					</div>
+					<div class="p-2"></div>
+						<button type="submit" name="adminlogin" class="btn btn-success"><i class="fa fa-sign-in-alt">&nbsp;Log In </i></button>
+				</form>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Close</button>
+      </div>
+    </div>
+  </div>
+</div>        
+<!-- end modal -->              
+<!-- modal -->
+<div class="modal fade" id="staff" tabindex="-1" aria-labelledby="staffLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="staffLabel">Staff Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+			<div style="background-color: #FFF; padding: 4px 6px;">
+
+			
+								
+				<form role="signin" method="post" action="/home.php">
+					<div class="row">
+						<div class="col-sm-12">
+							<label for="username" class="fw-bold">Username: <span class="text-danger">*</span></label>
+							<input type="text" name="username" class="form-control" placeholder="Input Username" required>
+						</div>
+						
+						<div class="col-sm-12">
+							<label for="password" class="fw-bold">Password: <span class="text-danger">*</span></label>
+							<input type="password" name="password" class="form-control" placeholder="Input Password" required>
+						</div>
+
+						<div class="col-sm-12">
+							<label for="role" class="fw-bold">Role: <span class="text-danger">*</span></label>
+                            <select name="role" id="role" class="form-control" required>
+                                <option value="">--Select  Role--</option>
+                                <option value=head>Head</option><option value=senior>Senior Master</option><option value=cashier>Cashier</option><option value=exam>Exam Officer</option><option value=admission>Admission Officer</option><option value=discipline>Discipline Master</option><option value=game>Game Master</option><option value=health>Health Master</option><option value=formmaster>Formmaster</option><option value=teacher>Teacher</option><option value=nanny>Nanny</option>                            </select>
+                        </div>
+					</div>
+					<div class="p-2"></div>
+						<button type="submit" name="stafflogin" class="btn btn-success"><i class="fa fa-sign-in-alt">&nbsp;Log In </i></button>
+				</form>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Close</button>
+      </div>
+    </div>
+  </div>
+</div>        
+<!-- end modal -->              
+<!-- modal -->
+<div class="modal fade" id="parent" tabindex="-1" aria-labelledby="parentLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="parentLabel">Parent Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+			<div style="background-color: #FFF; padding: 4px 6px;">
+				
+								
+				<form role="signin" method="post" action="/home.php">
+					<div class="row">
+						<div class="col-sm-12">
+							<label for="pid" class="fw-bold">Username:</label>
+							<input type="text" name="pid" class="form-control" placeholder="Parent ID or Parent Email">
+						</div>
+						
+						<div class="col-sm-12">
+							<label for="password" class="fw-bold">Password:</label>
+							<input type="password" name="password" class="form-control" placeholder="Input Password">
+						</div>
+					</div>
+					<div class="p-2"></div>
+						<button type="submit" name="login" class="btn btn-success"><i class="fa fa-sign-in-alt">&nbsp;Log In </i></button>
+				</form>
+			</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Close</button>
+      </div>
+    </div>
+  </div>
+</div>        
+<!-- end modal -->            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 fw-bold" id="schools"></div>
+</div>	
+	<!-- end navbar -->
+		
+	<div class="alert alert-danger text-center animate__animated animate__wobble">
+        <marquee behavior="alternate" direction="left" scrolldelay="400">
+        	<strong>Hi Visitor!</strong> Welcome to <strong>Abu Ubaida International College.</strong>
+        </marquee>
+	</div>
+
+	<!-- messages -->
+    
+
+
+    <!-- end messages -->
+	
+	<div class="row">
+		<!-- sidebar -->
+        <div class="col-md-3">
+    <div class="body-bg animate__animated animate__fadeInLeft">
+        <div class="alert-index alert-success p-2 text-center">
+            <i class="fa fa-calendar"></i>
+            Tue, 15th Jul, 2025        </div>
+    </div>
+
+    <div class="body-bg animate__animated animate__fadeInLeft">
+        <ul class="nav  nav-pills nav-stacked">
+            <li class="nav-header">Links</li>
+            <li><a href="https://www.schoolsonwebsite.com/index.php"><i class="fa fa-step-backward"></i>&nbsp;Schools on Website
+                <div class="pull-right">
+                    <i class="fa fa-angle-double-right"></i>
+                 </div> 
+            </a></li>
+            
+            <li><a href="https://www.abu-ubaida.scl.ng/index.php"><i class="fa fa-home"></i>&nbsp;Home
+                <div class="pull-right">
+                    <i class="fa fa-angle-double-right"></i>
+                 </div> 
+            </a></li>
+
+            <li><a href="https://www.scl.ng/webmail"><i class="fa fa-envelope"></i>&nbsp;Check Email
+                <div class="pull-right">
+                    <i class="fa fa-angle-double-right"></i>
+                 </div> 
+            </a></li>
+			
+            <li class="dropdown">
+            <a href="#" id="dropdownMenuButtonSM" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-copy"> </i>&nbsp;Admission
+                <div class="pull-right"><i class="fa fa-angle-down"></i></div>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonSM">
+                <li><a href="https://www.abu-ubaida.scl.ng/admission" class="dropdown-item">Apply Now</a></li>
+                <li><a href="https://www.abu-ubaida.scl.ng/admission/check_admission.php" class="dropdown-item">Check Admission Status</a></li>
+            </ul>
+            </li>
+						
+            <li class="nav-header">About US</li> 
+			<li><a href="https://www.abu-ubaida.scl.ng/contact.php"><i class="fa fa-envelope"></i>&nbsp;Contact Us
+                <div class="pull-right">
+                    <i class="fa fa-angle-double-right"></i>
+				</div> 
+            </a></li>
+			
+            <li><a href="#"><i class="fa fa-list"></i>&nbsp;History
+                <div class="pull-right">
+                    <i class="fa fa-angle-double-right"></i>
+                </div> 
+            </a></li>
+        </ul>
+    </div>
+</div>
+		<!-- end sidebar -->
+						          
+        <div class="col-md-9">								
+            <div class="body-bg animate__animated animate__fadeInRight">
+				<!-- slider -->
+				<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  	  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  	  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button> 
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button> 
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>   
+   </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container">
+		      <img src="https://www.abu-ubaida.scl.ng/images/1.jpg" class="img-fluid">          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+		      <img src="https://www.abu-ubaida.scl.ng/images/2.jpg" class="img-fluid">          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container">
+		      <img src="https://www.abu-ubaida.scl.ng/images/3.jpg" class="img-fluid">          
+        </div>
+      </div>
+	  <div class="carousel-item">
+        <div class="container">
+		      <img src="https://www.abu-ubaida.scl.ng/images/4.jpg" class="img-fluid">          
+        </div>
+      </div>
+	  
+	  <div class="carousel-item">
+        <div class="container">
+		      <img src="https://www.abu-ubaida.scl.ng/images/5.jpg" class="img-fluid">          
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <img src="https://www.abu-ubaida.scl.ng/images/6.jpg" class="img-fluid">          
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <img src="https://www.abu-ubaida.scl.ng/images/7.jpg" class="img-fluid">          
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <img src="https://www.abu-ubaida.scl.ng/images/8.jpg" class="img-fluid">          
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <img src="https://www.abu-ubaida.scl.ng/images/9.jpg" class="img-fluid">          
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
+          <img src="https://www.abu-ubaida.scl.ng/images/10.jpg" class="img-fluid">          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>				<!-- end slider -->
+            </div>                
+        </div>				
+	</div>
+	
+	<!-- vision and mission -->
+	<br>
+<div class="row">   
+   <div class="col-md-4">
+   <div class="body-bg animate__animated animate__fadeInLeft">
+        <div class="alert-index alert-primary p-2 text-center">
+            <p class="text-center fw-bolder">VISION</p>
+			<p>
+				<blockquote>"To be a leading beacon of holistic education in Nigeria, nurturing young minds to excel academically, morally, and creatively, preparing them to become responsible global citizens"</blockquote>
+			</p>
+        </div>
+    </div>
+	</div>
+	
+	<div class="col-md-8">
+	<div class="body-bg animate__animated animate__fadeInRight">
+        <div class="alert-index alert-success p-2 text-center">
+			<p class="text-center fw-bolder">MISSION</p>
+            <p>
+				<blockquote>"At Abu Ubaida International College, our mission is to provide a nurturing and stimulating learning environment that fosters academic excellence, character development, and a passion for lifelong learning among our students. Through innovative teaching methods, a dedicated faculty, and a commitment to community engagement, we aim to empower our students to thrive in a rapidly changing world"</blockquote>
+			</p> 
+        </div>
+    </div>
+	</div>
+</div>		<!-- vision and mission -->
+				
+	<!-- about us -->
+			<div class="row-fluid">
+            <div class="col-md-12">				
+				</br>
+                <div class="row">
+					<div class="col-md-9 animate__animated animate__fadeInUp">
+					<div class="alert bg-success text-white text-center">
+						<i class=""></i>&nbsp;<strong>Why Bring Your Child to Abu Ubaida International College
+?</strong>
+					</div>
+					
+                      <div class="alert alert-success"><i class="fa fa-building"></i>&nbsp;<strong>Excellence in Academic Rigor:</strong>
+						</div>
+                        <div class="white-bg text-center">
+							<blockquote>
+								<p>
+									"At Abu Ubaida International Colleg, we are dedicated to maintaining a rigorous academic curriculum that instills a thirst for knowledge and critical thinking skills in our students. Our experienced educators employ modern teaching methodologies to ensure that every child reaches their full academic potential."
+								</p>
+							</blockquote>						
+						</div>
+						<br>
+						
+							
+						<div class="alert alert-success"><i class="fa fa-building"></i>&nbsp;<strong>Character Development and Values:</strong>
+						</div>
+						<div class="white-bg text-center">
+							<blockquote>
+								<p>
+									"We understand that education extends beyond textbooks. Our school places a strong emphasis on character development, teaching values such as integrity, empathy, and respect. We aim to produce well-rounded individuals who not only excel academically but also contribute positively to their communities"
+								</p>
+							</blockquote>							
+						</div>
+						<br>						
+
+						<div class="alert alert-success"><i class="fa fa-building"></i>&nbsp;<strong>Innovation and Technology Integration:</strong>
+						</div>
+						<div class="white-bg text-center">
+							<blockquote>
+								<p>
+									"In a world driven by technology, Abu Ubaida International College is committed to staying at the forefront of educational innovation. We embrace technology as a tool to enhance learning and prepare our students for the digital age. Our classrooms are equipped with state-of-the-art resources, and we continuously invest in professional development for our staff to ensure effective technology integration"
+								</p>								
+							</blockquote>
+						</div>
+                    </div>
+					
+                    <div class="col-md-3 animate__animated animate__fadeInUp">
+                        <div class="alert bg-primary">
+                            <i class="fa fa-sitemap"></i>&nbsp;<strong>Our Sections</strong>
+                        </div>
+                        <div class="white-bg">
+                        	<p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Pre-Nursery</a></p>
+                            <p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Nursery</a></p>
+                            <p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Primary</a></p>
+                            <p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Secondary</a></p>
+                            <p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Evening Classes</a></p>		
+							<p><a href=""><i class="fa fa-arrow-right"></i>&nbsp;Extramoral Classes</a></p>							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	<!-- end about us -->
+
+	<!-- footer -->
+	<br>
+<div class="navbar  navbar-inverse">
+    <div class="navbar-inner container-fluid">
+        <div class="footerindex p-2">
+            <center><img width="25" height="25" src="https://www.abu-ubaida.scl.ng/images/favicon.png">&nbsp;&copy; 2025 Abu Ubaida International College. All Right Reserved.</center>
+        </div>
+	</div>		
+</div>
+
+
+<!--JS -->	
+<script type="text/javascript" src="https://www.abu-ubaida.scl.ng/assets/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://www.abu-ubaida.scl.ng/assets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://www.abu-ubaida.scl.ng/assets/js/dataTables.bootstrap5.min.js"></script>	
+<script type="text/javascript" src="https://www.abu-ubaida.scl.ng/assets/plugins/summernote/summernote-lite.min.js"></script>
+ 
+<script type="text/javascript">
+//DATA TABLES
+$(document).ready(function() {
+    $('#example').DataTable();
+});
+
+//SUMMERNOTE
+$(document).ready(function() {
+    $('#summernote').summernote({
+        toolbar: [
+            ['style', ['bold', 'italic', 'underline', 'clear']],
+            ['font', ['strikethrough', 'superscript', 'subscript', 'fontname', 'fontsize', 'color']],
+            ['para', ['ul', 'ol', 'paragraph', 'height',]],
+            ['insert', ['table', 'link', 'picture', 'video', 'hr']],
+            ['view', [ 'undo', 'redo', 'fullscreen', 'codeview', 'help']],
+        ]
+    });
+    /*$('.dropdown-toggle').dropdown();*/
+});
+</script>
+</body>
+</html>
+	<!-- end footer -->
+</div>

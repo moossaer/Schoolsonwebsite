@@ -1,0 +1,240 @@
+body {
+    background-color: silver;
+}
+.container {
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgb(0,0,2);
+}
+h2 {
+    position: relative;
+    color: blue;
+    display: inline;
+    font-size: 20px;
+    left: 20px;
+}
+.motto {
+    color: red;
+    font-style: italic;
+    margin-top: -5px;
+}
+.website {
+    color: blue;
+    margin-top: -15px;
+}
+.login {
+    position: relative;
+    text-align: right;
+    padding: 0px;
+    margin: 10px;
+    margin-top: -15px;
+}
+.button {
+    color: white;
+    background-color: green;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+}
+.logo {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    margin-left: -25px;
+}
+.welcome {
+    border: 2px solid pink;
+    margin-top: 40px;
+    background-color: pink;
+    color: red;
+    position: relative;
+    height: 50px;
+}
+.welcome1 {
+    display: inline;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+}
+#datecontainer {
+    border: 17px solid whitesmoke;
+    border-radius: 10px;
+     box-shadow: 0 10px 30px rgb(0,0,0,2);
+}
+.datecontainer {
+    border: 1px solid lightgreen;
+    background-color: lightgreen;
+    padding: 10px;
+    text-align: center;
+    border-radius: 9px;
+}
+.maincontainer {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+     box-shadow: 0 10px 30px rgb(0,0,2);
+}
+a {
+    display: block;
+    text-decoration: none;
+    margin: 15px;
+}
+.abuubaida {
+    position: absolute;
+    border: 35px solid whitesmoke;
+    height: 170px;
+    width: 274px;
+    border-radius: 7px;
+     box-shadow: 0 10px 30px rgb(0,0,2);
+}
+.vision {
+    border: 15px solid white;
+    background-color: lightskyblue;
+    border-radius: 10px;
+     box-shadow: 0 10px 30px rgb(0,0,2);
+}
+.contentv {
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+}
+.visionh {
+    text-align: center;
+    color: blue;
+}
+.visionp {
+    text-align: center;
+}
+.mission {
+    border: 15px solid white;
+    background-color: lightgreen;
+    border-radius: 10px;
+     box-shadow: 0 10px 30px rgb(0,0,2);
+}
+.contentm {
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+}
+.missionh {
+    text-align: center;
+    color: green;
+}
+.missionp {
+    text-align: center;
+}
+.why {
+    background-color: seagreen;
+    position: relative;
+    width: 343px;
+    height: 70px;
+    border-radius: 7px;
+}
+.whybring {
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
+.excellence {
+    background-color: lightgreen;
+    position: relative;
+    height: 55px;
+    border-radius: 7px;
+}
+.excellenceh {
+    color: green;
+    padding-top: 17px;
+    padding-left: 5px;
+}
+.rigor {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.rigorp {
+    text-align: center;
+    padding-bottom: 18.5px;
+    word-spacing: 2.5px;
+}
+.character {
+    background-color: lightgreen;
+    position: relative;
+    height: 55px;
+    border-radius: 7px;
+}
+.characterh {
+    color: green;
+    padding-top: 17px;
+    padding-left: 5px;
+}
+.characterdev {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.characterdevp {
+    text-align: center;
+    padding-bottom: 15px;
+    word-spacing: 1.8px;
+}
+.innovation {
+    background-color: lightgreen;
+    position: relative;
+    height: 55px;
+    border-radius: 7px;
+}
+.innovationh {
+    color: green;
+    padding-top: 17px;
+    padding-left: 5px;
+}
+.innovationand {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.innovationandp {
+    text-align: center;
+    padding-bottom: 15px;
+    word-spacing: 1.6px;
+}
+.section {
+    background-color: dodgerblue;
+    position: relative;
+    height: 55px;
+    border-radius: 7px;
+}
+.sectionh {
+    color: black;
+    padding-top: 13px;
+    padding-left: 5px;
+}
+.sectioncontainer {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.closing {
+    background-color: black;
+    position: relative;
+    height: 55px;
+    border-radius: 7px;
+}
+.logolast {
+    position: absolute;
+    height: 37px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 17px;
+    border-radius: 4px;
+}
+.closingp {
+    color: white;
+    position: relative;
+    text-align: center;
+}
